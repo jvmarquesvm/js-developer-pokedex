@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/pokemon.ico">
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -24,7 +25,10 @@
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <div class="headerHome">
+            <h1>Pokedex </h1>
+            <h4>Modified by jvictor_marques</h4>
+        </div>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,6 +40,13 @@
             </button>
         </div>
     </section>
+
+    <div class="modal"></div>
+
+    <div id="popup">
+        <button id="close-bnt" onclick="closePopUp()"><img src="./assets/img/cross.png"></button> <br>
+        <label>Favorite Pokémon added !</label>
+    </div>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
